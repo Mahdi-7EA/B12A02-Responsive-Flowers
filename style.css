@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font style */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+/* sheared styles */
+body {
+  background-color: rgba(245, 248, 255, 1);
+}
+
+.container {
+  width: 1140px;
+  margin: 30px auto;
+}
+
+.dark {
+  color: black;
+}
+.dark-1 {
+  color: rgba(37, 36, 50, 1);
+}
+.ash-color {
+  color: rgba(137, 135, 161, 1);
+}
+
+.orange-color {
+  color: rgba(233, 90, 8, 1);
+}
+
+/* nav styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 135px;
+  height: auto;
+  object-fit: cover;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 48px;
+}
+
+.nav-menu > li {
+  list-style: none;
+}
+
+/* hero section styles */
+.hero {
+  display: flex;
+  align-items: end;
+  margin-top: 106px;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.hero-content {
+  width: 570px;
+  height: 299px;
+  flex: 1;
+  /* border: 1px solid black; */
+}
+
+.hero-content > h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 4.0625rem;
+}
+
+.hero-content > p {
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-img {
+  width: 100%;
+  flex: 1;
+  /* border: 1px solid black; */
+}
+/* responsive styles */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hidden-phone {
+    display: none;
+  }
+
+  .logo-img {
+    width: 30%;
+  }
+
+  /* nav styles */
+  .nav-container {
+    padding: 15px;
+  }
+
+  /* hero styles */
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 28px;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    padding-top: 0;
+  }
+
+  .hero-content > h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content > p {
+    font-size: 0.875rem;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
