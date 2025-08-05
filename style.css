@@ -35,6 +35,7 @@ body {
 .container {
   width: 1140px;
   margin: 30px auto;
+  /* border: 1px solid black; */
 }
 
 .dark {
@@ -79,14 +80,12 @@ body {
   align-items: end;
   margin-top: 106px;
   justify-content: space-between;
-  /* border: 1px solid black; */
 }
 
 .hero-content {
   width: 570px;
   height: 299px;
   flex: 1;
-  /* border: 1px solid black; */
 }
 
 .hero-content > h2 {
@@ -105,8 +104,75 @@ body {
 .hero-img {
   width: 100%;
   flex: 1;
-  /* border: 1px solid black; */
 }
+
+/* Plants Section styles */
+.Plants-Section {
+  margin-top: 120px;
+}
+.Plant-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Plant-titles > h2 {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 3.125rem;
+}
+
+.Plant-titles > p {
+  width: 70%;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card-container {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 12px;
+}
+
+.card-body {
+  /* border: 1px solid black; */
+  width: 100%;
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.product-info > h2 {
+  font-weight: 500;
+  font-size: 1.57rem;
+}
+.product-info > p {
+  font-weight: 800;
+  font-size: 1.57rem;
+}
+.add-to-card {
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  border: none;
+}
+
+/* !!!!ATTENTION: THE FOLLOWING PART HANDLES RESPONSIVENESS.!!!! */
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .container {
@@ -152,5 +218,30 @@ body {
   .hero-img {
     max-width: 100%;
     height: auto;
+  }
+
+  /* Plant section */
+  .Plants-Section {
+    margin-top: 65px;
+  }
+  .Plant-titles > h2 {
+    font-size: 1.5rem;
+  }
+
+  .Plant-titles > p {
+  width: 95%;
+  margin-bottom: 28px;
+  font-size: 0.875rem;
+}
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 15px;
+  }
+
+  .product-info > h2,
+  .product-info > p {
+    font-size: 1rem;
   }
 }
