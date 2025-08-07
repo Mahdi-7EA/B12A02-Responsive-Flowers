@@ -78,7 +78,7 @@ body {
 .hero {
   display: flex;
   align-items: end;
-  margin-top: 106px;
+  margin-top: 150px;
   justify-content: space-between;
 }
 
@@ -171,6 +171,81 @@ body {
   border: none;
 }
 
+/* Plants Lover section styles */
+
+.flower-shop {
+  margin: 250px auto;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.shop-img {
+  width: 48%;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.store-pic {
+  width: 100%;
+}
+
+.store-badge {
+  width: 286px;
+  position: absolute;
+  right: -90px;
+  top: -130px;
+}
+
+.shop-content {
+  width: 45%;
+}
+
+.shop-content > h2 {
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+
+.shop-content > ul {
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+.shop-content > ul > li {
+  margin-bottom: 20px;
+  margin-left: 40px;
+  color:  rgba(0, 0, 0, 0.5);
+}
+
+/* Latest Deals */
+.Deals {
+  margin-top: 120px;
+}
+.Deals-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Deals-container > h2 {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 3.125rem;
+}
+
+.Deals-container > p {
+  width: 70%;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* !!!!ATTENTION: THE FOLLOWING PART HANDLES RESPONSIVENESS.!!!! */
 
 /* responsive styles */
@@ -221,18 +296,20 @@ body {
   }
 
   /* Plant section */
-  .Plants-Section {
+  .Plants-Section, .Deals {
     margin-top: 65px;
   }
-  .Plant-titles > h2 {
+  .Plant-titles > h2, .Deals-container > h2 {
     font-size: 1.5rem;
   }
 
-  .Plant-titles > p {
-  width: 95%;
-  margin-bottom: 28px;
-  font-size: 0.875rem;
-}
+  .Plant-titles > p, .Deals-container > p {
+    width: 95%;
+    margin-bottom: 28px;
+    font-size: 0.875rem;
+    padding: 20px;
+    padding-top: 0px;
+  }
 
   .card-container {
     grid-template-columns: repeat(2, 1fr);
@@ -243,5 +320,36 @@ body {
   .product-info > h2,
   .product-info > p {
     font-size: 1rem;
+  }
+
+  /* Plants Lover section styles */
+  .flower-shop {
+    margin: 40px auto;
+    width: 100%;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .shop-img {
+    width: 100%;
+  }
+
+  .shop-content {
+    width: 100%;
+  }
+
+  .shop-content > h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+  }
+
+  .shop-content > ul {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+
+  .shop-content > ul > li {
+    margin-bottom: 10px;
+    margin-left: 15px;
   }
 }
