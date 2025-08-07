@@ -218,10 +218,10 @@ body {
 .shop-content > ul > li {
   margin-bottom: 20px;
   margin-left: 40px;
-  color:  rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
-/* Latest Deals */
+/* Deals section styles */
 .Deals {
   margin-top: 120px;
 }
@@ -246,6 +246,72 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.Deals-Discount {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 28px;
+  color: white;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box-1 {
+  width: 367px;
+  height: 206px;
+  border-radius: 14px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url(assets/deal-bloom.png);
+  background-size: cover;
+  background-position: center;
+}
+.box-2 {
+  width: 367px;
+  height: 206px;
+  border-radius: 14px;
+  margin-top: 25px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url(assets/deal-ana.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-1 > p,
+.box-2 > p {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.box-1 > p > a,
+.box-2 > p > a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+}
+.box-3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url(assets/deal-zabo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-3 > p {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.box-3 > p > a {
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: white;
+}
+.hidden-pc {
+  visibility: hidden;
+}
+
 /* !!!!ATTENTION: THE FOLLOWING PART HANDLES RESPONSIVENESS.!!!! */
 
 /* responsive styles */
@@ -257,6 +323,9 @@ body {
 
   .hidden-phone {
     display: none;
+  }
+  .hidden-pc {
+    visibility: visible;
   }
 
   .logo-img {
@@ -296,14 +365,17 @@ body {
   }
 
   /* Plant section */
-  .Plants-Section, .Deals {
+  .Plants-Section,
+  .Deals {
     margin-top: 65px;
   }
-  .Plant-titles > h2, .Deals-container > h2 {
+  .Plant-titles > h2,
+  .Deals-container > h2 {
     font-size: 1.5rem;
   }
 
-  .Plant-titles > p, .Deals-container > p {
+  .Plant-titles > p,
+  .Deals-container > p {
     width: 95%;
     margin-bottom: 28px;
     font-size: 0.875rem;
@@ -351,5 +423,30 @@ body {
   .shop-content > ul > li {
     margin-bottom: 10px;
     margin-left: 15px;
+  }
+  /* Deals styles */
+  .Deals-Discount {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 100%;
+    height: 206px;
+  }
+
+  .box-2 {
+    margin-top: 20px;
+  }
+
+  .box-3 > p {
+    font-size: 1.25rem;
+  }
+  .box-3 > p > a {
+    font-size: 1rem;
   }
 }
