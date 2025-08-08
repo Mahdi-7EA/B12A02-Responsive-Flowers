@@ -174,7 +174,7 @@ body {
 /* Plants Lover section styles */
 
 .flower-shop {
-  margin: 250px auto;
+  margin: 150px auto;
   width: 1140px;
   display: flex;
   justify-content: space-between;
@@ -223,7 +223,7 @@ body {
 
 /* Deals section styles */
 .Deals {
-  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .Deals-container {
   display: flex;
@@ -348,6 +348,34 @@ input[type="button"] {
   background-color: #e95a08;
   color: white;
   border: none;
+}
+
+/* footer styles */
+footer {
+  margin: 50px auto;
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  width: 350px;
+}
+.footer-content > img {
+  width: 135px;
+  height: auto;
+  object-fit: cover;
+}
+.footer-content > p {
+  font-weight: normal;
+  font-size: 1.375rem;
+  color: rgba(107, 114, 128, 1);
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  color: rgba(107, 114, 128, 1);
 }
 
 /* !!!!ATTENTION: THE FOLLOWING PART HANDLES RESPONSIVENESS.!!!! */
@@ -502,5 +530,17 @@ input[type="button"] {
   }
   input[type="button"] {
     width: 100%;
+  }
+
+  /* footer styles */
+  footer {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .footer-content > p {
+    font-size: 1rem;
   }
 }
